@@ -1,0 +1,8 @@
+- train.csv
+  - 학습용 데이터셋
+- train_with_normal.csv
+  - [generate_normal_data.ipynb](../generate_normal_data.ipynb)을 통해 '일반 대화' 데이터 1,000개가 추가된 학습용 데이터셋
+- test.json
+  - 테스트 데이터셋
+- submission.csv
+  - 제출 예제 파일
