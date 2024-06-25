@@ -90,7 +90,7 @@ def load_data(path):
     # 결측치 제거
     null_check = data.isnull().sum()
     check = False
-    for i in range(len(null_check))
+    for i in range(len(null_check)):
         if null_check[i] > 0:
             check = True
             
