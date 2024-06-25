@@ -20,6 +20,8 @@ def morph_analyze(text):
     morphs = okt.morphs(text)
     return morphs
 
+#불용어
+stopwords = ['은','는','이','가','을','를','에','이가','이는']    
 
 # 각 문장의 불용어, 특수 문자 등을 제거하는 function: {return: 정리된 문장}
 def sentence_analysis(sentence):
@@ -100,10 +102,7 @@ def load_data(path):
     
     # 중복 제거
     data.drop_duplicates(subset = ['conversation'], inplace=True)
-    
-    #불용어
-    stopwords = ['은','는','이','가','을','를','에','이가','이는']
-    
+
     data = data['conversation'].map(lambda x: sentence_analysis(x))
 
     return data
