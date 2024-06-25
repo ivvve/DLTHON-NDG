@@ -9,6 +9,7 @@ from konlpy.tag import Mecab
 import numpy as np
 from collections import Counter
 import re
+from sklearn.model_selection import train_test_split
 
 
 # 형태소 분석하는 함수 
