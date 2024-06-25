@@ -8,6 +8,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from konlpy.tag import Mecab
 import numpy as np
 from collections import Counter
+import re
 
 
 # 형태소 분석하는 함수 
